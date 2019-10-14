@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="stylesheets/reset.css">
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/bootstrap-grid.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+  <title>Jungle run</title>
+</head>
+<body>
+    <div class="game-over d-none">
+        <h1>GAME OVER</h1> 
+        <button id="restart" class="main-button">RESTART</button>
+    </div>
+    <div id="intro-board" class="main-background">
+        <h1>Welcome to Dessert Hunt</h1>
+        <button id="start-button" class="main-button">PLAY</button>
+    </div>
+  <div class="nav-bar">
+    <div>
+      <button id="start"></button>
+      <button id="pause"></button>
+    </div>
+    <div>
+      <img src="img/life.png" alt="life" class="life">
+      <img src="img/life.png" alt="life" class="life">
+      <img src="img/life.png" alt="life" class="life">
+    </div>
+    <div class="my-coins">
+      <img src="img/coin.png" alt="coin" id="coin">
+      <h2 id="coin-counter">0</h2>
+    </div>
+  </div>
+
+  <div class="flex">
+    <canvas id="my-canvas" width="1300" height="600"></canvas>
+  </div>
+  <script src="constants.js"></script>
+  <script src="background.js"></script>
+  <script src="platform_jump.js"></script>
+  <script src="platform.js"></script>
+  <script src="bullet.js"></script>
+  <script src="coin.js"></script>
+  <script src="end_level.js"></script>
+  <script src="girl.js"></script>
+  <script src="cactus.js"></script>
+  <script src="poisson.js"></script>
+  <script src="game.js"></script>
+  <script src="score.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
